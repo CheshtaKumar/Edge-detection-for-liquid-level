@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.10)
+project(detectArea)
+find_package(OpenCV)
+set(CMAKE_CXX_STANDARD 11)
+include_directories(${OpenCV_INCLUDE_DIRS})
+add_executable(detectArea main.cpp)
+target_link_libraries(detectArea ${OpenCV_LIBS})
